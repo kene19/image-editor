@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.resalt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  padding-top: 5px;
+}
+
+.resalt img {
+  display: block;
+  position: relative;
+  max-width: calc(100% - 4vmin);
+  max-height: 45vmin;
+}
+
+body {
+  background-color: rgba(109, 27, 185, 0.952);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150vh;
+
+}
+
+.con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 13px;
+  border-radius: 15px;
+  width: 400px;
+  background-color: rgba(236, 236, 236, 0.979);
+
+}
+
+.custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 40px;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: rgba(109, 27, 185, 0.952);
+  cursor: pointer;
+}
+
+.fillterbox {
+  display: flex;
+  margin-bottom: 10px;
+  border: 3px solid rgba(109, 27, 185, 0.952);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.custombtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 160px;
+  margin-bottom: 10px;
+  gap: 1em;
+}
+
+.rot {
+  padding: 20px;
+  border-radius: 10px;
+  border: 3px solid rgba(109, 27, 185, 0.952);
+  margin-bottom: 20px;
+  height: 200px;
+}
+
+#Normal {
+  padding: 5px;
+  border: 2px solid rgba(109, 27, 185, 0.952);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btncus {
+  padding: 7px;
+  width: 100px;
+  color: #fff;
+  font-weight: 300;
+  background-color: rgba(109, 27, 185, 0.952);
+  border: none;
+  cursor: pointer;
+}
+
+.btncus:focus {
+  color: black;
+  background-color: transparent;
+  border: 2px solid rgba(109, 27, 185, 0.952);
+}
+
+.Restart,
+.Save-image {
+  padding: 7px;
+  border: 2px solid rgba(109, 27, 185, 0.952);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+#left,
+#right,
+#flipx,
+#flipy {
+  padding: 5px;
+}
+
+input[type="range"] {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 90%;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  /*  overflow: hidden;  remove this line*/
+
+  /* New additions */
+  height: 6px;
+  background: #ccc;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  height: 15px;
+  width: 15px;
+  background-color: rgba(109, 27, 185, 0.952);
+  border-radius: 50%;
+  border: none;
+
+  /* box-shadow: -407px 0 0 400px #f50; emove this line */
+  transition: .2s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 3px rgba(109, 27, 185, 0.952);
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+  box-shadow: 0 0 0 5px rgba(109, 27, 185, 0.952);
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px rgba(109, 27, 185, 0.952);
+}
+
+@media screen and (max-width:450px) {
+  .con {
+    padding: 20px 10px;
+    width: 350px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width:380px) {
+  .con {
+    padding: 20px 10px;
+    width: 330px;
+  }
+}
