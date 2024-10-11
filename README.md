@@ -28,7 +28,7 @@ This project is a web-based image filter and editing tool. Users can upload an i
 ## Installation
 
 To run this project locally, follow this link:
-<a href="">Image Filter and Editing</a>
+<a href="https://kene19.github.io/image-editor/">Image Filter and Editing</a>
 
 ## Usage
 
